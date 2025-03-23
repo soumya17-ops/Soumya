@@ -25,11 +25,6 @@
                 <h1><span>Soumyashree</span></h1>
                 <h3>Software Developer | Tech Enthusiast</h3>
                 <p>Passionate about coding, problem-solving, and building impactful applications. Currently pursuing MCA and specializing in Java, Python, and Web Development.</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/soumya17-ops" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/shutt_erpro" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                </div>
                 <a href="your-cv.pdf" class="btn" download>Download CV</a>
             </div>
             <div class="home-img">
@@ -95,5 +90,16 @@
             <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
+
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
