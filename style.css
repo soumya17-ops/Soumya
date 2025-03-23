@@ -161,7 +161,7 @@ nav .link ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Skills Section - Fix Position */
+/* Skills Section - Fixed Position & Structure */
 #skills {
     display: flex;
     flex-direction: column;
