@@ -142,8 +142,8 @@ nav .link ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Section Box Styling */
-.project-frame {
+/* About, Education, Skills, Projects, and Contact Box Styling */
+.section-frame {
     max-width: 800px;
     margin: auto;
     background-color: #f9f9f9;
@@ -153,7 +153,7 @@ nav .link ul li a:hover {
     text-align: left;
 }
 
-.project-frame p {
+.section-frame p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
