@@ -15,40 +15,40 @@
                 Soumyashree <span>Barik</span>
             </div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+                <a href="#home" data-aos="fade-up" data-aos-duration="1500">Home</a>
+                <a href="#about" data-aos="fade-up" data-aos-duration="1500">About</a>
+                <a href="#skills" data-aos="fade-up" data-aos-duration="1500">Skills</a>
+                <a href="#projects" data-aos="fade-up" data-aos-duration="1500">Projects</a>
+                <a href="#contact" data-aos="fade-up" data-aos-duration="1500">Contact</a>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
         <div class="dropdown">
             <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
             </div>
         </div>
     </nav>
-    <section>
+    <section id="home">
         <div class="main-container">
             <div class="image" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="my_photo.jpg" alt="Soumyashree Barik">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Soumyashree</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text">Tech Enthusiast & Developer</span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
+                <h1 data-aos="fade-left" data-aos-duration="1500">Hey I'm <span>Soumyashree</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500">I'm a <span class="typewriter-text"></span><label>|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
                 <div class="social-links">
-                    <a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500">
                     <button>Hire me</button>
                 </div>
             </div>
@@ -56,8 +56,45 @@
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({offset:0});
+        AOS.init({offset: 0});
     </script>
-    <script src="script.js"></script>
+    <script>
+        function hamburg() {
+            document.querySelector(".dropdown").style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            document.querySelector(".dropdown").style.transform = "translateY(-500px)";
+        }
+        
+        // Typewriter Effect
+        const texts = ["Developer", "Designer", "Tech Enthusiast"];
+        let speed = 100;
+        const textElement = document.querySelector(".typewriter-text");
+        let textIndex = 0;
+        let charIndex = 0;
+
+        function typeWriter() {
+            if (charIndex < texts[textIndex].length) {
+                textElement.innerHTML += texts[textIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, speed);
+            } else {
+                setTimeout(eraseText, 1000);
+            }
+        }
+
+        function eraseText() {
+            if (textElement.innerHTML.length > 0) {
+                textElement.innerHTML = textElement.innerHTML.slice(0, -1);
+                setTimeout(eraseText, 50);
+            } else {
+                textIndex = (textIndex + 1) % texts.length;
+                charIndex = 0;
+                setTimeout(typeWriter, 500);
+            }
+        }
+
+        window.onload = typeWriter;
+    </script>
 </body>
 </html>
