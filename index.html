@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-    <title>Soumyashree Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumyashree Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  <video autoplay loop muted plays-inline class="back-vid">
+    <source src="images/galaxy.mp4" type="video/mp4">
+  </video>
+  <section class="main-section">
     <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
-                Soumyashree <span>Barik</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
+      <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Soumyashree</span> Barik</h1>
+      <ul>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#">Home </a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Projects</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Skills</a></li>
+        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contact</a></li>
+      </ul>
     </nav>
-    <section>
-        <div class="main-container">
-            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
-                <img src="my_photo.jpg" alt="Soumyashree Barik">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Soumyashree</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text">Tech Enthusiast & Developer</span><label for="">|</label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
-                <div class="social-links">
-                    <a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-                    <button>Hire me</button>
-                </div>
-            </div>
+
+    <div class="hero">
+      <div class="hero-info">
+        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Soumyashree</h1>
+        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">I'm a Tech Enthusiast & Developer</h2>
+        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
+        <div class="Buttons">
+          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100">Hire me</button> 
+          <ul class="ul-icons">
+            <li><a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400" ><i class='bx bxl-instagram'></i></a></li>
+          </ul>
         </div>
-    </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({offset:0});
-    </script>
-    <script src="script.js"></script>
+      </div>
+
+      <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
+        <img src="images/my_photo.jpg" alt="Soumyashree Barik">
+      </div>
+    </div>
+
+    <div class="info-sec">
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1600">
+        <h1>2+</h1>
+        <p>Years of <br> Experience</p>
+      </div>
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1700">
+        <h1>5+</h1>
+        <p>Technical <br> Skills</p>
+      </div>
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800">
+        <h1>10+</h1>
+        <p>Projects <br> Completed</p>
+      </div>
+      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1900">
+        <h1>100%</h1>
+        <p>Dedication <br> & Hard Work</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
