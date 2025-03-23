@@ -3,103 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soumyashree Barik - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Soumyashree Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="#home" class="logo">Soumyashree</a>
-        <nav class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="home" class="home">
-        <div class="home-container">
-            <div class="home-text">
-                <h1><span>Soumyashree</span></h1>
-                <h3>Software Developer | Tech Enthusiast</h3>
-                <p>Passionate about coding, problem-solving, and building impactful applications. Currently pursuing MCA and specializing in Java, Python, and Web Development.</p>
-                <a href="your-cv.pdf" class="btn" download>Download CV</a>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Soumyashree <span>Barik</span>
             </div>
-            <div class="home-img">
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
                 <img src="my_photo.jpg" alt="Soumyashree Barik">
             </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skill-list">
-            <span>Java</span>
-            <span>Python</span>
-            <span>MySQL</span>
-            <span>HTML & CSS</span>
-            <span>JavaScript</span>
-        </div>
-    </section>
-
-    <section id="education" class="education">
-        <h2>Education</h2>
-        <div class="education-content">
-            <div class="edu-card">
-                <h3>MCA</h3>
-                <p>KIIT University (2023-2025)</p>
-            </div>
-            <div class="edu-card">
-                <h3>BSc Computer Science</h3>
-                <p>MPC Autonomous College (2020-2023)</p>
-            </div>
-            <div class="edu-card">
-                <h3>Intermediate (Science)</h3>
-                <p>Anchalika Mahavidyalaya (2018-2020)</p>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Soumyashree</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text">Tech Enthusiast & Developer</span><label for="">|</label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
+                <div class="social-links">
+                    <a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button>Hire me</button>
+                </div>
             </div>
         </div>
     </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Food Delivery Website</h3>
-                <p>Developed a fully responsive food ordering platform with seamless UI and payment integration.</p>
-            </div>
-            <div class="project-card">
-                <h3>Anime Merchandise Website</h3>
-                <p>Built an e-commerce platform featuring dynamic product listings and a smooth checkout process.</p>
-            </div>
-            <div class="project-card">
-                <h3>Quiz Application</h3>
-                <p>Created an interactive Java-based desktop quiz application using AWT & Swing.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:sb6351677@gmail.com">sb6351677@gmail.com</a></p>
-        <form action="#" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+      AOS.init({offset:0});
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
