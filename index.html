@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <title>Soumyashree Barik - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
     <header>
         <a href="#" class="logo">Soumyashree Barik</a>
-        <nav>
-            <a href="#" class="active">Home</a>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
             <a href="#skills">Skills</a>
             <a href="#education">Education</a>
             <a href="#projects">Projects</a>
@@ -21,70 +19,56 @@
         </nav>
     </header>
 
-    <section class="home">
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Soumyashree</span></h1>
+            <h3>Tech Enthusiast</h3>
+            <p>Currently pursuing MCA, improving my coding skills, and learning new technologies.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/soumya17-ops" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/shutt_erpro" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="your-cv.pdf" class="btn" download>Download CV</a>
+        </div>
         <div class="home-img">
             <img src="my_photo.jpg" alt="Soumyashree Barik">
         </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Soumyashree</span></h1>
-            <h3>Tech Enthusiast</h3>
-            <p>
-                I am currently pursuing MCA. As a tech enthusiast, I am trying to level up my coding skills, expand my knowledge of new technologies, and prepare for upcoming interviews. I am eager to find a place where I can use my skills to the fullest and help the company succeed while gaining experience on projects.
-            </p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/soumya17-ops" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.instagram.com/shutt_erpro" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-            </div>
-            <a href="your-cv.pdf" class="btn download-cv" download>
-                <i class="fa-solid fa-file-arrow-down"></i> Download CV
-            </a>
-        </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <h2>Skills</h2>
         <ul>
             <li>Java</li>
-            <li>Python (Beginner)</li>
+            <li>Python</li>
             <li>MySQL</li>
             <li>HTML</li>
             <li>CSS</li>
         </ul>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="education">
         <h2>Education</h2>
         <ul>
-            <li><strong>Masters of Computer Application:</strong> KIIT Deemed to be University (2023-2025) </li>
-            <li><strong>Bachelor's in Computer Science:</strong> Maharaja Purna Chandra Autonomous College, Mayurbhanj (2020-2023)  </li>
-            <li><strong>Intermediate (Science):</strong> Anchalika Mahavidyalaya, Gadia, Mayurbhanj (2018-2020)</li>
-            <li><strong>Matriculation:</strong> Bhanjpur New Govt. High School, Baripada (2015-2018)</li>
+            <li>MCA - KIIT University (2023-2025)</li>
+            <li>BSc Computer Science - MPC Autonomous College (2020-2023)</li>
+            <li>Intermediate (Science) - Anchalika Mahavidyalaya (2018-2020)</li>
+            <li>Matriculation - Bhanjpur Govt. High School (2015-2018)</li>
         </ul>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Food Delivery Website:</strong> Developed a responsive food delivery platform emphasizing an intuitive order page and front-end menu design.</li>
-            <li><strong>Anime Merchandise Website:</strong> Designed and developed an anime merchandise e-commerce website featuring a shopping cart and a size selection feature.</li>
-            <li><strong>Quiz Application:</strong> Currently working on a desktop-based application using Java AWT and Swing for an interactive user experience.</li>
+            <li>Food Delivery Website</li>
+            <li>Anime Merchandise Website</li>
+            <li>Quiz Application (Java AWT & Swing)</li>
         </ul>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p><strong>Email:</strong> <a href="mailto:sb6351677@gmail.com" class="email-link">sb6351677@gmail.com</a></p>
+        <p>Email: <a href="mailto:sb6351677@gmail.com">sb6351677@gmail.com</a></p>
         <form action="#" method="post" class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -93,5 +77,4 @@
         </form>
     </section>
 </body>
-
 </html>
