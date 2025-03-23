@@ -130,13 +130,13 @@ nav .link ul li a:hover {
     box-shadow: 0 0 10px orangered;
 }
 
-/* Common Section Styling (For About, Education, Projects, Contact) */
-#eAbout, #education, #projects, #contact {
+/* Common Section Styling (For About, Education, Skills, Projects, Contact) */
+#eAbout, #education, #skills, #projects, #contact {
     text-align: center;
     padding: 50px 10%;
 }
 
-#eAbout h2, #education h2, #projects h2, #contact h2 {
+#eAbout h2, #education h2, #skills h2, #projects h2, #contact h2 {
     font-size: 35px;
     color: orangered;
     margin-bottom: 20px;
@@ -160,23 +160,13 @@ nav .link ul li a:hover {
 }
 
 /* Skills Section */
-#skills {
-    text-align: center;
-    padding: 50px 10%;
-}
-
-#skills h2 {
-    font-size: 35px;
-    color: orangered;
-    margin-bottom: 20px;
-}
-
 #skills ul {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 0;
 }
 
 #skills li {
