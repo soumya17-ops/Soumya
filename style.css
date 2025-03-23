@@ -136,13 +136,14 @@ nav .link ul li a:hover {
     padding: 50px 10%;
 }
 
+/* Section Headings */
 #eAbout h2, #education h2, #skills h2, #projects h2, #contact h2 {
     font-size: 35px;
     color: orangered;
     margin-bottom: 20px;
 }
 
-/* About, Education, Skills, Projects, and Contact Box Styling */
+/* Frame Style for All Sections */
 .section-frame {
     max-width: 800px;
     margin: auto;
@@ -153,13 +154,26 @@ nav .link ul li a:hover {
     text-align: left;
 }
 
+/* About, Education, Skills, Projects, and Contact Box Styling */
 .section-frame p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-/* Skills Section */
+/* Skills Section - Fix Position */
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered Skills */
+    justify-content: center;
+}
+
+#skills .section-frame {
+    text-align: center; /* Ensures Skills text is centered */
+}
+
+/* Skills List */
 #skills ul {
     list-style: none;
     display: flex;
