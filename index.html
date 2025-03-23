@@ -16,56 +16,78 @@
     <nav>
       <h1 data-aos="zoom-in" data-aos-duration="1000"><span style="color: #4acfee;">Soumyashree</span> Barik</h1>
       <ul>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a class="active" href="#">Home </a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Projects</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Skills</a></li>
-        <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contact</a></li>
+        <li><a class="active" href="#home">Home </a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="hero">
+    <section id="home" class="hero">
       <div class="hero-info">
-        <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Hi, I'm Soumyashree</h1>
-        <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">I'm a Tech Enthusiast & Developer</h2>
-        <p data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1000">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
+        <h1 data-aos="fade-right" data-aos-duration="1000">Hi, I'm Soumyashree</h1>
+        <h2 data-aos="fade-left" data-aos-duration="1000">I'm a Tech Enthusiast & Developer</h2>
+        <p data-aos="flip-down" data-aos-duration="1000">I am currently pursuing MCA and passionate about coding, problem-solving, and developing innovative projects in Java, Python, and Web Development.</p>
         <div class="Buttons">
-          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="1100">Hire me</button> 
+          <button class="btn" data-aos="zoom-in-right" data-aos-duration="1000">Hire me</button> 
           <ul class="ul-icons">
-            <li><a href="https://github.com/soumya17-ops" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"><i class='bx bxl-github'></i></a></li>
-            <li><a href="https://www.linkedin.com/in/soumyashree-barik-110712281/" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300"><i class='bx bxl-linkedin'></i></a></li>
-            <li><a href="https://www.instagram.com/shutt_erpro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400" ><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://github.com/soumya17-ops"><i class='bx bxl-github'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/soumyashree-barik-110712281/"><i class='bx bxl-linkedin'></i></a></li>
+            <li><a href="https://www.instagram.com/shutt_erpro"><i class='bx bxl-instagram'></i></a></li>
           </ul>
         </div>
       </div>
-
-      <div class="hero-img" data-aos="zoom-in-left" data-aos-duration="2500">
+      <div class="hero-img">
         <img src="images/my_photo.jpg" alt="Soumyashree Barik">
       </div>
-    </div>
+    </section>
 
-    <div class="info-sec">
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1600">
-        <h1>2+</h1>
-        <p>Years of <br> Experience</p>
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1700">
-        <h1>5+</h1>
-        <p>Technical <br> Skills</p>
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1800">
-        <h1>10+</h1>
-        <p>Projects <br> Completed</p>
-      </div>
-      <div class="info-card" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="1900">
-        <h1>100%</h1>
-        <p>Dedication <br> & Hard Work</p>
-      </div>
-    </div>
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>MySQL</li>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MCA:</strong> KIIT University (2023-2025)</li>
+        <li><strong>BSc Computer Science:</strong> MPC Autonomous College (2020-2023)</li>
+        <li><strong>Intermediate (Science):</strong> Anchalika Mahavidyalaya (2018-2020)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Food Delivery Website:</strong> Built a responsive food ordering platform.</li>
+        <li><strong>Anime Merchandise Website:</strong> Developed an e-commerce site with shopping cart.</li>
+        <li><strong>Quiz Application:</strong> Created a Java-based quiz app using AWT & Swing.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:sb6351677@gmail.com">sb6351677@gmail.com</a></p>
+    </section>
   </section>
+
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+    document.querySelectorAll("nav ul li a").forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+      });
+    });
   </script>
 </body>
 </html>
