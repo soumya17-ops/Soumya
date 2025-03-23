@@ -127,12 +127,12 @@ nav .link ul li a:hover{
 }
 
 /* Centered Section Styling */
-#education, #projects, #contact {
+#about, #education, #projects, #contact {
     text-align: center;
     padding: 50px 10%;
 }
 
-#education h2, #projects h2, #contact h2 {
+#about h2, #education h2, #projects h2, #contact h2 {
     font-size: 35px;
     color: orangered;
     margin-bottom: 20px;
