@@ -167,7 +167,7 @@ nav .link ul li a:hover {
 
 /* Frame Style for All Sections */
 #eAbout .section-frame {
-    max-width: 30%; /* reduced from ~40% (default 800px) to 30% */
+    max-width: 800px; /* back to original ~40% width */
     margin: auto;
     background-color: #f9f9f9;
     padding: 20px;
