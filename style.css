@@ -150,7 +150,7 @@ nav .link ul li a:hover {
 }
 
 /* Common Section Styling */
-#eAbout, #education, #skills, #projects, #contact {
+#about, #education, #skills, #projects, #contact {
     text-align: center;
     padding: 50px 10%;
     display: flex;
@@ -160,7 +160,7 @@ nav .link ul li a:hover {
 }
 
 /* Section Headings */
-#eAbout h2, #education h2, #skills h2, #projects h2, #contact h2 {
+#about h2, #education h2, #skills h2, #projects h2, #contact h2 {
     font-size: 35px;
     color: orangered;
     margin-bottom: 20px;
