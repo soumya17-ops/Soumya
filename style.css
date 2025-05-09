@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
 
 * {
     margin: 0;
@@ -86,12 +86,10 @@ nav .link ul li a:hover {
 .profile-image {
     width: 180px;
     height: 180px;
-    margin-bottom: 20px;
-    margin-left: 0; /* reset left margin */
+    margin: 0 auto 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 20px auto; /* center horizontally */
 }
 
 .profile-image img {
@@ -102,7 +100,6 @@ nav .link ul li a:hover {
     border: 3px solid orangered;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Buttons */
 .btn button {
@@ -152,7 +149,6 @@ nav .link ul li a:hover {
     box-shadow: 0 0 10px orangered;
 }
 
-/* Common Section Styling (For About, Education, Skills, Projects, Contact) */
 /* Common Section Styling */
 #eAbout, #education, #skills, #projects, #contact {
     text-align: center;
@@ -170,7 +166,7 @@ nav .link ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Frame Style for All Sections */
+/* Section Frame Box */
 .section-frame {
     max-width: 800px;
     width: 100%;
@@ -181,26 +177,13 @@ nav .link ul li a:hover {
     text-align: left;
 }
 
-/* About, Education, Skills, Projects, and Contact Box Styling */
 .section-frame p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-/* Skills Section - Fix Position */
-#skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centered Skills */
-    justify-content: center;
-}
-
-#skills .section-frame {
-    text-align: center; /* Ensures Skills text is centered */
-}
-
-/* Skills List */
+/* Skills List Styling */
 #skills ul {
     list-style: none;
     display: flex;
@@ -240,4 +223,4 @@ nav .link ul li a:hover {
         flex-direction: column;
         align-items: center;
     }
-} 
+}
