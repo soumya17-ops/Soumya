@@ -153,9 +153,14 @@ nav .link ul li a:hover {
 }
 
 /* Common Section Styling (For About, Education, Skills, Projects, Contact) */
+/* Common Section Styling */
 #eAbout, #education, #skills, #projects, #contact {
     text-align: center;
     padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Section Headings */
@@ -167,8 +172,8 @@ nav .link ul li a:hover {
 
 /* Frame Style for All Sections */
 .section-frame {
-    max-width: 800px; /* back to original ~40% width */
-    margin: auto;
+    max-width: 800px;
+    width: 100%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
