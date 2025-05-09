@@ -87,7 +87,11 @@ nav .link ul li a:hover {
     width: 180px;
     height: 180px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 0; /* reset left margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto; /* center horizontally */
 }
 
 .profile-image img {
@@ -162,8 +166,8 @@ nav .link ul li a:hover {
 }
 
 /* Frame Style for All Sections */
-.section-frame {
-    max-width: 800px;
+#eAbout .section-frame {
+    max-width: 30%; /* reduced from ~40% (default 800px) to 30% */
     margin: auto;
     background-color: #f9f9f9;
     padding: 20px;
