@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
 
-/* Reset and Base Styles */
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    color: black;
+    scroll-behavior: smooth;
 }
 
 /* Navigation Bar */
@@ -54,32 +60,13 @@ nav .link ul li a:hover {
     width: 100%;
     height: 90vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 40vh;
 }
 
-/* Profile Image */
-.profile-image {
-    width: 150px;
-    height: 150px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Main Details */
 .main-detail p {
     font-size: 20px;
     font-weight: 700;
@@ -94,6 +81,23 @@ nav .link ul li a:hover {
     font-size: 25px;
     margin-bottom: 20px;
 }
+
+/* Profile Image */
+.profile-image {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 /* Buttons */
 .btn button {
@@ -143,19 +147,20 @@ nav .link ul li a:hover {
     box-shadow: 0 0 10px orangered;
 }
 
-/* Section Styling */
-section {
+/* Common Section Styling (For About, Education, Skills, Projects, Contact) */
+#eAbout, #education, #skills, #projects, #contact {
     text-align: center;
     padding: 50px 10%;
 }
 
-section h2 {
+/* Section Headings */
+#eAbout h2, #education h2, #skills h2, #projects h2, #contact h2 {
     font-size: 35px;
     color: orangered;
     margin-bottom: 20px;
 }
 
-/* Section Frame */
+/* Frame Style for All Sections */
 .section-frame {
     max-width: 800px;
     margin: auto;
@@ -166,24 +171,26 @@ section h2 {
     text-align: left;
 }
 
+/* About, Education, Skills, Projects, and Contact Box Styling */
 .section-frame p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
-/* Skills Section */
+/* Skills Section - Fix Position */
 #skills {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centered Skills */
     justify-content: center;
 }
 
 #skills .section-frame {
-    text-align: center;
+    text-align: center; /* Ensures Skills text is centered */
 }
 
+/* Skills List */
 #skills ul {
     list-style: none;
     display: flex;
@@ -209,18 +216,18 @@ section h2 {
         height: auto;
         padding: 20px 0;
     }
-
+    
     nav .link ul {
         flex-direction: column;
         gap: 1rem;
     }
-
+    
     section {
         padding: 60px 5%;
     }
-
+    
     ul {
         flex-direction: column;
         align-items: center;
     }
-}
+} 
