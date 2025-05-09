@@ -166,7 +166,7 @@ nav .link ul li a:hover {
 }
 
 /* Frame Style for All Sections */
-#eAbout .section-frame {
+.section-frame {
     max-width: 800px; /* back to original ~40% width */
     margin: auto;
     background-color: #f9f9f9;
