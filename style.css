@@ -20,7 +20,7 @@ nav {
     width: 100%;
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,31 +28,48 @@ nav {
     top: 0;
     left: 0;
     z-index: 1000;
+    padding: 0 20px;
 }
 
 nav .logo h2 span {
     color: orangered;
 }
 
+/* Hamburger icon */
+#menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Nav links */
 nav .link ul {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
     list-style: none;
 }
 
 nav .link ul li a {
-    position: relative;
     text-decoration: none;
     color: black;
     font-weight: 600;
     transition: 0.3s ease;
+    position: relative;
 }
 
 nav .link ul li a:hover {
     color: orangered;
     text-shadow: 1px 1px orangered;
+}
+
+/* Responsive menu styling */
+.link {
+    transition: transform 0.3s ease;
+}
+
+.link.active {
+    display: flex !important;
 }
 
 /* Main Section */
@@ -105,14 +122,14 @@ nav .link ul li a:hover {
 .btn button {
     padding: 10px 20px;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 2px solid orangered;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 .btn .btn-1 {
     background-color: white;
-    color: black;
+    color: orangered;
 }
 
 .btn .btn-2 {
@@ -142,85 +159,84 @@ nav .link ul li a:hover {
 }
 
 .social i:hover {
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-    padding: 5px;
-    box-shadow: 0 0 10px orangered;
-}
-
-/* Common Section Styling */
-#about, #education, #skills, #projects, #contact {
-    text-align: center;
-    padding: 50px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Section Headings */
-#about h2, #education h2, #skills h2, #projects h2, #contact h2 {
-    font-size: 35px;
     color: orangered;
-    margin-bottom: 20px;
+    transform: scale(1.2);
 }
 
-/* Section Frame Box (About, Education, etc.) */
-.section-frame {
-    max-width: 800px;
-    width: 100%;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+/* Section */
+section {
+    margin-top: 15vh;
+    padding: 40px 0;
+    text-align: center;
 }
 
-.section-frame p {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
+section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: orangered;
 }
 
-/* Skills List Styling */
-#skills ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0;
-}
-
-#skills li {
-    background-color: orangered;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Responsive Design */
+/* Mobile View */
 @media (max-width: 768px) {
-    nav {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav .link {
+        display: none;
         flex-direction: column;
-        height: auto;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         padding: 20px 0;
     }
-    
+
+    nav .link.active {
+        display: flex;
+    }
+
     nav .link ul {
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
-    
-    section {
-        padding: 60px 5%;
+
+    .main-detail h1 {
+        font-size: 35px;
     }
     
-    ul {
-        flex-direction: column;
-        align-items: center;
+    /* Footer */
+.footer {
+    width: 100%;
+    background-color: #f8f8f8; /* Light background for footer */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    color: black;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px; /* Adjust based on the rest of your layout */
+}
+
+.footer p {
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
+}
+
+@media (max-width: 480px) {
+    .footer p {
+        font-size: 12px; /* Further decrease font size for mobile devices */
+    }
+}
+
 }
